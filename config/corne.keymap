@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Capslck {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+            timeout-ms = <0>;
+            layers = <0>;
+            require-prior-idle-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
